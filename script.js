@@ -1,4 +1,3 @@
-
 function BMI(waga, wzrost) {
     const bmi = waga / (wzrost * wzrost);
     return bmi;
@@ -19,11 +18,10 @@ function klasyfikujBMI(bmi) {
 function pokazBMI(waga, wzrost) {
     const bmi = BMI(waga, wzrost); 
     const klasyfikacja = klasyfikujBMI(bmi); 
-    console.log(`Twoje BMI wynosi: ${bmi.toFixed(2)} - ${klasyfikacja}`); 
+    console.log("Twoje BMI wynosi: " + bmi.toFixed(2) + " - " + klasyfikacja); 
 }
 
-
 const waga = 70; 
-const wzrost = 1.75;
+const wzrost = 1.85;
 
 pokazBMI(waga, wzrost);
